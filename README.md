@@ -40,6 +40,17 @@ lib/portfolio.rb          valuation and rebalance
 spec/                     examples that lock the rules above
 ```
 
+## Try it in irb
+
+Start `irb` from this directory. `.irbrc` adds `lib` to the load path, and `require "portfolio_management"` loads every class.
+
+```
+$ irb
+> require "portfolio_management"
+> apple = Stock.new("appl")
+> apple.current_price("342.94")
+```
+
 ## Run the specs
 
 ```
